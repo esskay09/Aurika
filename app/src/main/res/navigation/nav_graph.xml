@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.aurika.ui.MainFragment"
+        android:label="MainFragment"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.example.aurika.ui.WebFragment"
+        android:label="WebFragment" >
+        <action
+            android:id="@+id/action_webFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="bookUrl"
+            app:argType="string"
+            android:defaultValue='"ERROR"' />
+        <argument
+            android:name="bookName"
+            app:argType="string"
+            android:defaultValue="ERROR100" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.aurika.ui.AboutFragment"
+        android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/sourceDialog"
+        android:name="com.example.aurika.ui.SourceDialogFragment"
+        android:label="SourceDialog" />
+</navigation>
