@@ -31,12 +31,9 @@ class MainFragmentViewModel : ViewModel() {
     }
 
 
-
-
     fun searchBook(string: String) {
 
         _liveList.value = null
-
 
         _progressBarVisibility.value = ProgressBar.VISIBLE
         _readerRecommendationVisibility.value = TextView.INVISIBLE

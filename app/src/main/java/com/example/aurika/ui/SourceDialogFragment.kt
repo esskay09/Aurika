@@ -20,11 +20,8 @@ class SourceDialogFragment : DialogFragment() {
 
         val binding : FragmentSourceDialogBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_source_dialog, container, false)
 
-       
-
         binding.radioGroup.setOnCheckedChangeListener { group, checkedId ->
-
-
+            this.dismiss()
         }
 
         return binding.root

@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Bspresso</string>
-    <string name="search_button">Search Button</string>
-    <string name="esskay099_gmail_com">esskay099@gmail.com</string>
-    <string name="error_no_results_founds">No results Found</string>
-    <string name="full_reader_link">Recommended reader:
-        https://play.google.com/store/apps/details?id=com.fullreader</string>
-    <string name="search">Search</string>
-</resources>
